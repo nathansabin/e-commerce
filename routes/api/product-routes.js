@@ -3,6 +3,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
 
+//DONE
 // get all products
 router.get('/', (req, res) => {
   // find all products
@@ -18,6 +19,7 @@ router.get('/', (req, res) => {
 
 });
 
+// DONE
 // get one product
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
@@ -32,6 +34,7 @@ router.get('/:id', (req, res) => {
   }
 });
 
+// DONE
 // create new product
 router.post('/', (req, res) => {
   /* req.body should look like this...
@@ -64,6 +67,7 @@ router.post('/', (req, res) => {
     });
 });
 
+// DONE
 // update product
 router.put('/:id', (req, res) => {
   // update product data
@@ -109,6 +113,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// DONE 
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
   // trys to remove product

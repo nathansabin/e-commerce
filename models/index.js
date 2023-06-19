@@ -9,7 +9,7 @@ Product.belongsTo(Category, {
   foreignKey: "category_id",
 });
 
-// Categories hasmany Products
+// Categories hasMany Products
 Category.hasMany(Product, {
   foreignKey: "category_id",
   onDelete: "SET NULL"
