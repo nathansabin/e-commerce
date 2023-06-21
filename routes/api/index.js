@@ -3,9 +3,7 @@ const categoryRoutes = require('./category-routes');
 const productRoutes = require('./product-routes');
 const tagRoutes = require('./tag-routes');
 
-// get / works
-// get /id works
-// TODO fix all other routes
+// TODO fix delete
 router.use('/categories', categoryRoutes);
 
 // DONE

@@ -27,10 +27,10 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// TODO needs work
+// Done
 router.post('/', (req, res) => {
   // create a new category
-  Category.create(res.body)
+  Category.create(req.body)
     .then((newCategory) => {
       res.status(200).json(newCategory);
     })
@@ -39,13 +39,13 @@ router.post('/', (req, res) => {
     });
 });
 
-// TODO needs work
+// DONE
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
   try {
-    Category.update(
+    return Category.update(
       {
-        category_name: res.body.category_name
+        category_name: req.body.category_name
       },
       {
         where: {
@@ -80,3 +80,4 @@ router.delete('/:id', (req, res) => {
 });
 
 module.exports = router;
+
