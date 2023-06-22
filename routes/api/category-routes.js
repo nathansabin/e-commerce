@@ -61,7 +61,7 @@ router.put('/:id', (req, res) => {
   }
 });
 
-// TODO
+// Done
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
   try {
