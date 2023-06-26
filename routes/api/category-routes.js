@@ -4,6 +4,7 @@ const { Category, Product } = require('../../models');
 // The `/api/categories` endpoint
 
 // DONE
+// gets all data in categories
 router.get('/', async (req, res) => {
   // find all categories
   // be sure to include its associated Products
@@ -16,6 +17,7 @@ router.get('/', async (req, res) => {
 });
 
 // DONE
+// gets all data with a related id
 router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
@@ -27,9 +29,9 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// Done
+// DONE 
+// creates a new category 
 router.post('/', (req, res) => {
-  // create a new category
   Category.create(req.body)
     .then((newCategory) => {
       res.status(200).json(newCategory);
@@ -40,8 +42,8 @@ router.post('/', (req, res) => {
 });
 
 // DONE
+//  update a category by its `id` value
 router.put('/:id', (req, res) => {
-  // update a category by its `id` value
   try {
     return Category.update(
       {
@@ -62,8 +64,8 @@ router.put('/:id', (req, res) => {
 });
 
 // Done
+ // delete a category by its `id` value
 router.delete('/:id', (req, res) => {
-  // delete a category by its `id` value
   try {
     Category.destroy({
       where: {

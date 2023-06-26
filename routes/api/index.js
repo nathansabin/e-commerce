@@ -3,13 +3,14 @@ const categoryRoutes = require('./category-routes');
 const productRoutes = require('./product-routes');
 const tagRoutes = require('./tag-routes');
 
-// TODO fix delete
+// DONE [v]
 router.use('/categories', categoryRoutes);
 
 // DONE
 router.use('/products', productRoutes);
+// POST [X]----
 
-// TODO ALL 
+// DONE [V]
 router.use('/tags', tagRoutes);
 
 module.exports = router;
