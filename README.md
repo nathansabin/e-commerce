@@ -28,7 +28,7 @@
     https://github.com/nathansabin/e-commerce
 
   Video link:
-  
+    https://drive.google.com/file/d/1L74mF3n-us2Fmj5raP7BhjZSXWS8Km1S/view
 
   ## Usage
 
